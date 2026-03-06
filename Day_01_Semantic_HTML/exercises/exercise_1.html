@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 1 Exercise 1</title>
+</head>
+
+<body>
+    <!-- 
+      Exercise 1: Refactor this "Div Soup" into Semantic HTML5.
+      
+      Instructions: 
+      1. Analyze the content and replace the <div> tags with the appropriate semantic HTML5 elements.
+      2. Ensure the document outline (headings) is logical.
+      3. Do not add any CSS. Focus purely on structure.
+    -->
+
+    <header id="header">
+        <div id="logo">My Awesome Blog</div>
+        <nav id="navigation">
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/about">About</a></li>
+                <li><a href="/contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main-content">
+        <article class="blog-post">
+            <header class="post-header">
+                <div class="post-title">
+                    <h2>Why Semantic HTML Matters</h2>
+                </div>
+                <div class="post-date">
+                    <p>October 24, 2023</p>
+                </div>
+            </header>
+            <section class="post-body">
+                <p>Semantic HTML introduces meaning to the web page rather than just presentation...</p>
+            </section>
+        </article>
+
+        <article class="blog-post">
+            <header class="post-header">
+                <div class="post-title">
+                    <h2>Understanding the DOM</h2>
+                </div>
+                <div class="post-date">
+                    <p>October 25, 2023</p>
+                </div>
+            </header>
+            <section class="post-body">
+                <p>The Document Object Model is a programming interface for web documents...</p>
+            </section>
+        </article>
+    </main>
+
+    <aside id="sidebar">
+        <div class="widget-title">About the Author</div>
+        <p>I am a web developer passionate about clean code.</p>
+    </aside>
+
+    <footer id="footer">
+        <p>&copy; 2023 My Awesome Blog</p>
+    </footer>
+
+</body>
+
+</html>

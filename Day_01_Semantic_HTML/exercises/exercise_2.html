@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 1 Exercise 2</title>
+</head>
+
+<body>
+    <!-- 
+      Exercise 2: Fix the Document Outline and Accessibility.
+      
+      Instructions: 
+      1. The heading structure below is broken. Fix it so it forms a logical outline (h1 -> h2 -> h3).
+      2. The image is missing a critical accessibility attribute. Add it.
+      3. The form inputs are not explicitly linked to their labels. Fix the accessibility linkage.
+    -->
+
+    <h1>Welcome to Our Service</h1>
+
+    <!-- Fix the image accessibility -->
+    <img src="https://via.placeholder.com/150" alt="placeholder showing grey block" />
+
+    <h2>Our Core Features</h2>
+
+    <h3>Feature 1: Speed</h3>
+    <p>We are very fast.</p>
+
+    <h3>Feature 2: Reliability</h3>
+    <p>We never go down.</p>
+
+    <!-- Fix the form accessibility -->
+    <form action="/submit" method="POST">
+        <div>
+            <label for="fullName">Full Name:</label>
+            <input type="text" name="fullName" id="fullName">
+        </div>
+
+        <!-- Hint: Consider the input type for an email -->
+        <div>
+            <label for="emailAddress">Email Address:</label>
+            <input type="email" name="emailAddress" id="emailAddress">
+        </div>
+
+        <button type="submit">Sign Up</button>
+    </form>
+
+</body>
+
+</html>
