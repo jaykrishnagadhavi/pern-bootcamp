@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Alignment Exercise</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: system-ui, sans-serif;
+            background-color: #f3f4f6;
+            padding: 2rem;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .container {
+            background-color: white;
+            border: 2px solid #cbd5e1;
+            border-radius: 8px;
+            padding: 10px;
+            height: 150px;
+            /* YOU WILL WRITE YOUR FLEXBOX CSS HERE */
+        }
+
+        #challenge-1 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #challenge-2 {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        #challenge-3 {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            align-items: flex-end;
+        }
+
+        .box {
+            width: 80px;
+            height: 80px;
+            background-color: #3b82f6;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 1.5rem;
+            border-radius: 4px;
+        }
+
+        h2 { font-size: 1.2rem; color: #333; }
+    </style>
+</head>
+<body>
+
+    <div>
+        <h2>Challenge 1: Center Everything</h2>
+        <p>Use flexbox to place Box 1 exactly in the dead center (horizontally and vertically) of its container.</p>
+        <div class="container" id="challenge-1">
+            <div class="box">1</div>
+        </div>
+    </div>
+
+    <div>
+        <h2>Challenge 2: Space Between</h2>
+        <p>Use flexbox to push Box 1 to the far left, Box 3 to the far right, and Box 2 dead center.</p>
+        <div class="container" id="challenge-2">
+            <div class="box">1</div>
+            <div class="box">2</div>
+            <div class="box">3</div>
+        </div>
+    </div>
+
+    <div>
+        <h2>Challenge 3: Bottom Right Column</h2>
+        <p>Stack the boxes vertically (in a column) and align them to the bottom right corner of the container.</p>
+        <div class="container" id="challenge-3">
+            <div class="box">1</div>
+            <div class="box">2</div>
+        </div>
+    </div>
+
+</body>
+</html>
