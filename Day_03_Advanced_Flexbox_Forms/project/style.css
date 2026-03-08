@@ -1,0 +1,60 @@
+/* Day 2: Advanced CSS and Flexbox */
+
+/* 1. Global Reset & Box Model */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* 2. Global CSS Variables */
+:root {
+    --primary-color: #2563eb;
+    --text-color: #1f2937;
+    --bg-color: #ffffff;
+    --spacing-md: 16px;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: system-ui, -apple-system, sans-serif;
+    line-height: 1.6;
+}
+
+/* Add your Flexbox and other CSS rules below */
+nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+}
+
+ nav a {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+#hero {
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#services ul {
+    display: flex;
+    list-style-type: none;
+    gap: 20px;
+}
+
+#services ul li {
+    padding: 12px;
+    border: 1px solid black;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+}
